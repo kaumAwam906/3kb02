@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Website portofolio kelas 3KB02" />
+    <title>Beranda | 3KB02 Class Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Checkbox CSS untuk mengganti tema, tanpa JavaScript. -->
+    <input
+      class="theme-toggle"
+      type="checkbox"
+      id="theme-toggle"
+      aria-label="Ganti mode gelap atau terang" />
+
+    <div class="site">
+      <!-- Header navigasi dipakai bersama oleh semua halaman. -->
+      <header class="header">
+        <a class="brand" href="index.html" aria-label="Beranda 3KB02">
+          <span class="brand-mark">3K</span>
+          <span class="brand-copy">
+            <strong>3KB02</strong>
+            <small>CLASS PORTFOLIO</small>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Navigasi utama">
+          <a class="active" href="index.html">Beranda</a>
+          <a class="" href="anggota.html">Anggota</a>
+          <a class="" href="galeri.html">Galeri</a>
+          <a class="" href="tentang.html">Tentang</a>
+        </nav>
+
+        <label class="theme-button" for="theme-toggle" title="Ganti tema">
+          <span class="theme-moon">☾</span>
+          <span class="theme-sun">☀</span>
+        </label>
+      </header>
+      <main>
+        <!-- HERO: bagian pembuka berisi identitas dan foto kelas. -->
+        <section class="hero container" id="home">
+          <div class="hero-copy">
+            <span class="eyebrow"
+              ><span class="eyebrow-dot"></span> WELCOME TO OUR CLASS</span
+            >
+            <h1>Satu kelas.<br /><span>Banyak cerita.</span></h1>
+            <p class="hero-description">
+              Ruang digital untuk mengenal anggota, menyimpan momen, dan
+              merayakan perjalanan kami sebagai keluarga 3KB02.
+            </p>
+
+            <!-- Tombol ini membuka file HTML lain, bukan bagian halaman yang sama. -->
+            <div class="hero-actions">
+              <a class="button button-primary" href="anggota.html"
+                >Kenali Anggota <span>↗</span></a
+              >
+              <a class="button button-secondary" href="galeri.html"
+                >Jelajahi Galeri</a
+              >
+            </div>
+
+            <div class="hero-note">
+              <span class="note-line"></span>
+              <span>Tempat cerita kita dimulai.</span>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-frame">
+              <!-- Simpan foto kelas dengan nama foto-gabungan.jpg di folder assets/foto-kelas. -->
+              <img
+                class="class-photo"
+                src="assets/foto-kelas/foto-gabungan.jpg"
+                alt="Foto gabungan kelas 3KB02" />
+              <div class="photo-placeholder">
+                <span class="placeholder-icon">✦</span>
+                <strong>Foto Gabungan 3KB02</strong>
+                <small
+                  >Letakkan foto di<br />assets/foto-kelas/foto-gabungan.jpg</small
+                >
+              </div>
+              <div class="image-overlay"></div>
+              <div class="image-caption">
+                <span class="caption-label">OUR CLASS</span>
+                <strong>3KB02</strong>
+                <span>Growing together, creating memories.</span>
+              </div>
+              <div class="floating-badge">
+                <span class="badge-icon">✦</span>
+                <span
+                  ><strong>One community</strong
+                  ><small>One shared journey</small></span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- STATISTIK SINGKAT KELAS. -->
+        <section class="stats container">
+          <div class="stat"><strong>06</strong><span>Anggota awal</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><strong>01</strong><span>Keluarga kelas</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong>∞</strong><span>Cerita untuk dikenang</span>
+          </div>
+        </section>
+
+        <!-- KARTU MENU MENUJU HALAMAN TERPISAH. -->
+        <section class="section container">
+          <div class="section-heading">
+            <span class="eyebrow">OUR DIGITAL HOME</span>
+            <h2 class="section-title">
+              Kenangan kelas dalam <span>satu tempat.</span>
+            </h2>
+            <p>Pilih halaman yang ingin kamu kunjungi.</p>
+          </div>
+
+          <div class="member-grid">
+            <a class="member-card" href="anggota.html">
+              <div class="gallery-art art-blue">
+                <span class="gallery-symbol">♙</span
+                ><span class="gallery-label">OUR MEMBERS</span>
+              </div>
+              <div class="member-content">
+                <h3>Anggota Kelas</h3>
+                <p class="member-npm">Kenali enam anggota 3KB02.</p>
+                <div class="member-bottom">
+                  <span class="member-tag">Lihat profil</span
+                  ><span class="member-arrow">↗</span>
+                </div>
+              </div>
+            </a>
+            <a class="member-card" href="galeri.html">
+              <div class="gallery-art art-purple">
+                <span class="gallery-symbol">▧</span
+                ><span class="gallery-label">CLASS GALLERY</span>
+              </div>
+              <div class="member-content">
+                <h3>Galeri Kelas</h3>
+                <p class="member-npm">Dokumentasi dan momen bersama.</p>
+                <div class="member-bottom">
+                  <span class="member-tag">Lihat galeri</span
+                  ><span class="member-arrow">↗</span>
+                </div>
+              </div>
+            </a>
+            <a class="member-card" href="tentang.html">
+              <div class="gallery-art art-green">
+                <span class="gallery-symbol">✳</span
+                ><span class="gallery-label">ABOUT OUR CLASS</span>
+              </div>
+              <div class="member-content">
+                <h3>Tentang Kelas</h3>
+                <p class="member-npm">Informasi singkat kelas 3KB02.</p>
+                <div class="member-bottom">
+                  <span class="member-tag">Selengkapnya</span
+                  ><span class="member-arrow">↗</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer ditampilkan di bagian bawah setiap halaman. -->
+      <footer class="footer">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">3K</span>
+          <span class="brand-copy">
+            <strong>3KB02</strong>
+            <small>CLASS PORTFOLIO</small>
+          </span>
+        </a>
+        <p>Dibuat dengan cerita dan kebersamaan.<br />© 2026 3KB02</p>
+        <a class="back-top" href="#">Kembali ke atas ↑</a>
+      </footer>
+    </div>
+  </body>
+</html>
